@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MainStyle.css">
+    <title>Простой пример с JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Привет, JavaScript!</h1>
+        <input type="text" id="NameInput" placeholder="Введите Ваше имя">
+        <input type="number" id="AgeInput" placeholder="Введите Ваш возраст">
+        <input type="text" id="CityInput" placeholder="Где Вы живете?">
+        <p>Нажми на кнопку, чтобы увидеть магию JavaScript</p>
+        <button onclick="showMessage()">Показать сообщение</button>
+        <p id="message"></p>
+        <ul id="ItemList"></ul>
+        <button onclick="showList()">Показать список</button>
+        <p id="NumberList"></p>
+        <button onclick="showNumbers()">Показать четные числа от 1 до 20</button>
+        <br><br>
+        <table id="TableList"></table>
+        <button onclick="CreateTable()">Создать таблицу</button>
+        <br><br>
+        <button onclick="changeText('Привет, мир!')">Сказать "Привет, мир!"</button>
+        <button onclick="changeText('Пока, мир!')">Сказать "Пока, мир!"</button>
+        <p id="dynamicText"></p>
+        <br><br>
+        <button id="hoverButton">Наведи на меня!</button>
+        <p id="hoverText"></p>
+        <br><br>
+        <button id="doubleClick">Тыкни на меня дважды!</button>
+        <p id="DoubleText"></p>
+        <br><br>
+        <input type="text" id="focusholder" placeholder="Заполни меня!">
+        <p id="focusText"></p>
+        <br><br>
+        <input type="number" id="CalcNum1" placeholder="Введите первое число">
+        <input type="number" id="CalcNum2" placeholder="Введите второе число">
+        <br><br>
+        <button onclick="Calculator()">Суммировать значения</button>
+        <p id="CalcText"></p>
+        <br><br>
+        <p id="personInfo"></p>
+        <button onclick="showPersonInfo()">Показать информацию о человеке</button>
+        <br><br>
+        <ul id="peopleList"></ul>
+        <button onclick="showPeopleList()">Показать список людей</button>
+        <br><br>
+        <input type="text" id="PeopleName" placeholder="Укажите имя пользователя"><br><br>
+        <input type="number" id="PeopleAge" placeholder="Укажите возраст пользователя"><br><br>
+        <input type="text" id="PeopleCity" placeholder="Укажите место проживания пользователя"><br><br>
+        <input type="text" id="PeopleProf" placeholder="Укажите профессию пользователя"><br><br>
+        <input type="text" id="PeopleHobby" placeholder="Укажите хобби пользователя"><br><br>
+        <button onclick="addNewPeopleList()">Добавить человека</button><br><br>
+        <ul id="NewPeopleList"></ul>
+        <button onclick="ShowNewPeopleList()">Показать список добавленных людей</button>
+        <br><br>
+        <ul id="HelloPeopleText"></ul>
+        <button onclick="HelloPeople()">Кинуть салам новым людям</button><br><br>
+        <ul id="FilterPeopleText"></ul>
+        <button onclick="FilterPeople()">Пробив людей по Москве</button>
+        <br><br>
+        <p id="SumAgesText"></p>
+        <button onclick="SumAges()">Сумма лет</button>
+    </div>
+    <script src="js/showMessage.js"></script>
+    <script src="js/itemlist.js"></script>
+    <script src="js/dynamictext.js"></script>
+    <script src="js/ShowPersonInfo.js"></script>
+    <script src="js/consoleLog.js"></script>
+</body>
+</html>
