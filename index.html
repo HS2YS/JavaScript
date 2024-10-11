@@ -14,8 +14,9 @@
         <input type="number" id="AgeInput" placeholder="Введите Ваш возраст">
         <input type="text" id="CityInput" placeholder="Где Вы живете?">
         <p>Нажми на кнопку, чтобы увидеть магию JavaScript</p>
-        <button onclick="showMessage()">Показать сообщение</button>
-        <p id="message"></p>
+        <button onclick="showMessage()" ondblclick="ShowMeUser()">Тыкни раз, тыкни два</button>
+        <p id="message"></p><br>
+        <ul id="showmeuser"></ul><br><br>
         <ul id="ItemList"></ul>
         <button onclick="showList()">Показать список</button>
         <p id="NumberList"></p>
@@ -71,5 +72,6 @@
     <script src="js/dynamictext.js"></script>
     <script src="js/ShowPersonInfo.js"></script>
     <script src="js/consoleLog.js"></script>
+    <script src="js/userList.js"></script>
 </body>
 </html>
